@@ -108,7 +108,7 @@ return [
     |
     */
 
-    'log' => env('APP_LOG', 'single'),
+    'log' => env('APP_LOG', 'daily'),
 
     /*
     |--------------------------------------------------------------------------
@@ -167,6 +167,9 @@ return [
          */
         Padosoft\LaravelComposerSecurity\ComposerSecurityCheckServiceProvider::class,
 
+        //GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
+        Arcanedev\LogViewer\LogViewerServiceProvider::class,
+        Spatie\Tail\TailServiceProvider::class,
     ],
 
     /*
