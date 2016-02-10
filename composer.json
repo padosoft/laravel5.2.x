@@ -20,7 +20,7 @@
         "symfony/dom-crawler": "2.8.*|3.0.*",
 		"barryvdh/laravel-ide-helper": "^2.1",
         "barryvdh/laravel-debugbar": "^2.0",
-        "filp/whoops": "^1.1",
+        "filp/whoops": "^2.0",
         "scrutinizer/ocular": "~1.1",
         "phpmd/phpmd": "2.*",
         "squizlabs/php_codesniffer": "2.*"
