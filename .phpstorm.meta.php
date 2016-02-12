@@ -3,7 +3,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2016-02-10.
+    * Generated on 2016-02-11.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -134,8 +134,8 @@ namespace PHPSTORM_META {
             'command.ide-helper.generate' instanceof \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand,
             'command.ide-helper.models' instanceof \Barryvdh\LaravelIdeHelper\Console\ModelsCommand,
             'command.ide-helper.meta' instanceof \Barryvdh\LaravelIdeHelper\Console\MetaCommand,
-            'command.composer-security:check' instanceof \Padosoft\LaravelComposerSecurity\ComposerSecurityCheck,
             'command.tail' instanceof \Spatie\Tail\TailCommand,
+            'command.composer-security:check' instanceof \Padosoft\LaravelComposerSecurity\ComposerSecurityCheck,
         ],
         \Illuminate\Contracts\Container\Container::make('') => [
             '' == '@',
@@ -262,8 +262,8 @@ namespace PHPSTORM_META {
             'command.ide-helper.generate' instanceof \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand,
             'command.ide-helper.models' instanceof \Barryvdh\LaravelIdeHelper\Console\ModelsCommand,
             'command.ide-helper.meta' instanceof \Barryvdh\LaravelIdeHelper\Console\MetaCommand,
-            'command.composer-security:check' instanceof \Padosoft\LaravelComposerSecurity\ComposerSecurityCheck,
             'command.tail' instanceof \Spatie\Tail\TailCommand,
+            'command.composer-security:check' instanceof \Padosoft\LaravelComposerSecurity\ComposerSecurityCheck,
         ],
         \App::make('') => [
             '' == '@',
@@ -390,8 +390,8 @@ namespace PHPSTORM_META {
             'command.ide-helper.generate' instanceof \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand,
             'command.ide-helper.models' instanceof \Barryvdh\LaravelIdeHelper\Console\ModelsCommand,
             'command.ide-helper.meta' instanceof \Barryvdh\LaravelIdeHelper\Console\MetaCommand,
-            'command.composer-security:check' instanceof \Padosoft\LaravelComposerSecurity\ComposerSecurityCheck,
             'command.tail' instanceof \Spatie\Tail\TailCommand,
+            'command.composer-security:check' instanceof \Padosoft\LaravelComposerSecurity\ComposerSecurityCheck,
         ],
         app('') => [
             '' == '@',
@@ -518,8 +518,8 @@ namespace PHPSTORM_META {
             'command.ide-helper.generate' instanceof \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand,
             'command.ide-helper.models' instanceof \Barryvdh\LaravelIdeHelper\Console\ModelsCommand,
             'command.ide-helper.meta' instanceof \Barryvdh\LaravelIdeHelper\Console\MetaCommand,
-            'command.composer-security:check' instanceof \Padosoft\LaravelComposerSecurity\ComposerSecurityCheck,
             'command.tail' instanceof \Spatie\Tail\TailCommand,
+            'command.composer-security:check' instanceof \Padosoft\LaravelComposerSecurity\ComposerSecurityCheck,
         ],
     ];
 }

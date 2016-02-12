@@ -9,7 +9,7 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 use Illuminate\Foundation\Validation\ValidationException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
-use GrahamCampbell\Exceptions\ExceptionHandlerc as GrahamCampbellExceptionHandler;
+//use GrahamCampbell\Exceptions\ExceptionHandlerc as GrahamCampbellExceptionHandler;
 
 class Handler extends ExceptionHandler
 {
@@ -57,25 +57,29 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
-        if ($this->isHttpException($e))
-        {
-            return $this->renderHttpException($e);
+        if (config('app.debug') && app()->environment() != 'testing') {
+            return $this->renderExceptionWithWhoops($request, $e);
         }
 
-
-        if (config('app.debug'))
-        {
-            return $this->renderExceptionWithWhoops($e);
-        }
+        return parent::render($request, $e);
     }
 
     /**
+     * Render an exception using Whoops.
      *
+     * @param  \Illuminate\Http\Request $request
+     * @param  \Exception $e
+     * @return Response
      */
-    protected function renderExceptionWithWhoops(Exception $e)
+    protected function renderExceptionWithWhoops($request, Exception $e)
     {
         $whoops = new \Whoops\Run;
-        $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler());
+
+        if ($request->ajax()) {
+            $whoops->pushHandler(new \Whoops\Handler\JsonResponseHandler());
+        } else {
+            $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler());
+        }
 
         return new \Illuminate\Http\Response(
             $whoops->handleException($e),
@@ -83,4 +87,41 @@ class Handler extends ExceptionHandler
             $e->getHeaders()
         );
     }
+
+    /*
+         protected function renderExceptionWithWhoops($request, Exception $e)
+    {
+        $whoops = new \Whoops\Run;
+        if ($request->ajax() || $request->wantsJson()) {
+            $whoops->pushHandler(new \Whoops\Handler\JsonResponseHandler());
+        } else {
+            $handler = new \Whoops\Handler\PrettyPageHandler();
+            //$handler->setEditor('phpstorm');
+            $handler->setEditor(
+                function ($file, $line) {
+                    // if your development server is not local it's good to map remote files to local
+                    $translations = array('^' . env('SERVER_HOME') => env('LOCAL_HOME')); // change to your path
+                    foreach ($translations as $from => $to) {
+                        $file = rawurlencode(preg_replace('#' . $from . '#', $to, $file, 1));
+                    }
+                    return array(
+                        'url' => "phpstorm://open?file=$file&line=$line",
+                        'ajax' => false
+                    );
+                }
+            );
+            $handler->addResourcePath(base_path('app/Exceptions'));
+            $handler->addCustomCss('whoops.base.css');
+            $whoops->pushHandler($handler);
+        }
+
+        return new \Illuminate\Http\Response(
+            $whoops->handleException($e),
+            $e->getStatusCode(),
+            $e->getHeaders()
+        );
+    }
+     */
+
+
 }

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c534572bcfd5d8b88603a91b4d62eaa0",
-    "content-hash": "c260bb81e71bc987400a19a04f412724",
+    "hash": "6a0352ba06786f6b6de3afe543278ebb",
+    "content-hash": "28a05f2768be502d8f86580337ee732c",
     "packages": [
         {
             "name": "arcanedev/log-viewer",
@@ -128,6 +128,55 @@
                 "support"
             ],
             "time": "2016-02-06 10:30:25"
+        },
+        {
+            "name": "arrilot/laravel-systemcheck",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/arrilot/laravel-systemcheck.git",
+                "reference": "95c75dc2ac1bb02065b6cfc514216aa9ae054b9d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/arrilot/laravel-systemcheck/zipball/95c75dc2ac1bb02065b6cfc514216aa9ae054b9d",
+                "reference": "95c75dc2ac1bb02065b6cfc514216aa9ae054b9d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "5.*",
+                "illuminate/container": "5.*",
+                "illuminate/contracts": "5.*",
+                "illuminate/support": "5.*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Arrilot\\SystemCheck\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nekrasov Ilya",
+                    "email": "nekrasov.ilya90@gmail.com"
+                }
+            ],
+            "homepage": "https://github.com/arrilot/laravel-systemcheck",
+            "keywords": [
+                "check",
+                "health",
+                "laravel",
+                "system"
+            ],
+            "time": "2016-02-11 00:14:41"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -4607,7 +4656,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "arrilot/laravel-systemcheck": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
