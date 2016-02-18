@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.2.15 on 2016-02-18.
+ * Generated for Laravel 5.2.19 on 2016-02-18.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -476,11 +476,13 @@ if (! function_exists('data_set')) {
         if (($segment = array_shift($segments)) === '*') {
             if (! Arr::accessible($target)) {
                 $target = [];
-            } elseif ($segments) {
+            }
+
+            if ($segments) {
                 foreach ($target as &$inner) {
                     data_set($inner, $segments, $value, $overwrite);
                 }
-            } else {
+            } elseif ($overwrite) {
                 foreach ($target as &$inner) {
                     $inner = $value;
                 }
@@ -3969,6 +3971,52 @@ if (! function_exists('with')) {
         }
         
         /**
+         * Find a model by its primary key or return fresh model instance.
+         *
+         * @param mixed $id
+         * @param array $columns
+         * @return \Illuminate\Database\Eloquent\Model 
+         * @static 
+         */
+        public static function findOrNew($id, $columns = array()){
+            return \Illuminate\Database\Eloquent\Builder::findOrNew($id, $columns);
+        }
+        
+        /**
+         * Get the first record matching the attributes or instantiate it.
+         *
+         * @param array $attributes
+         * @return \Illuminate\Database\Eloquent\Model 
+         * @static 
+         */
+        public static function firstOrNew($attributes){
+            return \Illuminate\Database\Eloquent\Builder::firstOrNew($attributes);
+        }
+        
+        /**
+         * Get the first record matching the attributes or create it.
+         *
+         * @param array $attributes
+         * @return \Illuminate\Database\Eloquent\Model 
+         * @static 
+         */
+        public static function firstOrCreate($attributes){
+            return \Illuminate\Database\Eloquent\Builder::firstOrCreate($attributes);
+        }
+        
+        /**
+         * Create or update a record matching the attributes, and fill it with values.
+         *
+         * @param array $attributes
+         * @param array $values
+         * @return \Illuminate\Database\Eloquent\Model 
+         * @static 
+         */
+        public static function updateOrCreate($attributes, $values = array()){
+            return \Illuminate\Database\Eloquent\Builder::updateOrCreate($attributes, $values);
+        }
+        
+        /**
          * Execute the query and get the first result.
          *
          * @param array $columns
@@ -4301,6 +4349,17 @@ if (! function_exists('with')) {
          */
         public static function getModel(){
             return \Illuminate\Database\Eloquent\Builder::getModel();
+        }
+        
+        /**
+         * Get a fresh instance of a model instance being queried.
+         *
+         * @param array $attributes
+         * @return \Illuminate\Database\Eloquent\Model 
+         * @static 
+         */
+        public static function newModel($attributes = array()){
+            return \Illuminate\Database\Eloquent\Builder::newModel($attributes);
         }
         
         /**
