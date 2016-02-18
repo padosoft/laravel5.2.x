@@ -55,7 +55,7 @@
         ],
         "post-install-cmd": [
             "php artisan clear-compiled",
-            "php artisan ide-helper:generate -M -H"
+            "php artisan ide-helper:generate -M -H",
             "php artisan ide-helper:meta"
             "php artisan optimize"
         ],
