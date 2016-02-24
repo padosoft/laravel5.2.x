@@ -16,7 +16,7 @@
                 width: 100%;
                 display: table;
                 font-weight: 100;
-                font-family: 'Lato';
+                font-family: 'Lato, Arial';
             }
 
             .container {
@@ -39,8 +39,6 @@
         <div class="container">
             <div class="content">
                 <div class="title">Laravel 5.2</div>
-                div class="quote">{{ Inspiring::quote() }}</div>
-                <?php a=new $pippo(); ?>
             </div>
         </div>
     </body>
