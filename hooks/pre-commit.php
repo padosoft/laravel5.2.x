@@ -53,7 +53,7 @@ $review->addReview(new LineEndingsReview())
     //PADOSOFT REVIEW
     ->addReview(new VarDumpReview())
     ->addReview(new DdReview())
-    ->addReview(new PhpLeadingLineReviewNoBlade())
+
 ;
 
 $codeSniffer = new PhpCodeSnifferReviewNoBlade();
