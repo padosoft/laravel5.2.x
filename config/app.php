@@ -169,7 +169,9 @@ return [
          * PADOSOFT PACKAGES Service Providers...
          */
         Padosoft\LaravelComposerSecurity\ComposerSecurityCheckServiceProvider::class,
+        Padosoft\Hooks\HooksServiceProvider::class,
         Arrilot\SystemCheck\ServiceProvider::class,
+        MathiasGrimm\LaravelEnvValidator\ServiceProvider::class,
     ],
 
     /*
