@@ -12,8 +12,7 @@
         "arcanedev/log-viewer": "~3.0",
         "spatie/laravel-tail": "^1.1",
         "arrilot/laravel-systemcheck": "dev-master",
-        "mathiasgrimm/laravel-env-validator": "^1.1",
-        "padosoft/hooks": "^0.1.2"
+        "mathiasgrimm/laravel-env-validator": "^1.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
