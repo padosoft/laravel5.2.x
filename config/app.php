@@ -170,8 +170,10 @@ return [
          */
         Padosoft\LaravelComposerSecurity\ComposerSecurityCheckServiceProvider::class,
         Padosoft\Hooks\HooksServiceProvider::class,
+        Padosoft\Workbench\WorkbenchServiceProvider::class,
         Arrilot\SystemCheck\ServiceProvider::class,
         MathiasGrimm\LaravelEnvValidator\ServiceProvider::class,
+        GrahamCampbell\GitHub\GitHubServiceProvider::class,
     ],
 
     /*
@@ -218,6 +220,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
         'Debugbar'  => Barryvdh\Debugbar\Facade::class,
+        'GitHub'    => GrahamCampbell\GitHub\Facades\GitHub::class,
 
     ],
 

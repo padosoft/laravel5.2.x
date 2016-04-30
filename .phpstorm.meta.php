@@ -3,7 +3,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2016-03-22.
+    * Generated on 2016-04-29.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -58,6 +58,10 @@ namespace PHPSTORM_META {
             'arcanedev.log-viewer.commands.stats' instanceof \Arcanedev\LogViewer\Commands\StatsCommand,
             'Arrilot\SystemCheck\ChecksCollection' instanceof \Arrilot\SystemCheck\ChecksCollection,
             'command.system.check' instanceof \Arrilot\SystemCheck\Console\SystemCheckCommand,
+            'github.authfactory' instanceof \GrahamCampbell\GitHub\Authenticators\AuthenticatorFactory,
+            'github.factory' instanceof \GrahamCampbell\GitHub\GitHubFactory,
+            'github' instanceof \GrahamCampbell\GitHub\GitHubManager,
+            'github.connection' instanceof \Github\Client,
             'blade.compiler' instanceof \Illuminate\View\Compilers\BladeCompiler,
             'translation.loader' instanceof \Illuminate\Translation\FileLoader,
             'translator' instanceof \Illuminate\Translation\Translator,
@@ -140,6 +144,7 @@ namespace PHPSTORM_META {
             'command.ide-helper.meta' instanceof \Barryvdh\LaravelIdeHelper\Console\MetaCommand,
             'command.tail' instanceof \Spatie\Tail\TailCommand,
             'command.composer-security:check' instanceof \Padosoft\LaravelComposerSecurity\ComposerSecurityCheck,
+            'command.workbench:new' instanceof \Padosoft\Workbench\Workbench,
         ],
         \Illuminate\Contracts\Container\Container::make('') => [
             '' == '@',
@@ -190,6 +195,10 @@ namespace PHPSTORM_META {
             'arcanedev.log-viewer.commands.stats' instanceof \Arcanedev\LogViewer\Commands\StatsCommand,
             'Arrilot\SystemCheck\ChecksCollection' instanceof \Arrilot\SystemCheck\ChecksCollection,
             'command.system.check' instanceof \Arrilot\SystemCheck\Console\SystemCheckCommand,
+            'github.authfactory' instanceof \GrahamCampbell\GitHub\Authenticators\AuthenticatorFactory,
+            'github.factory' instanceof \GrahamCampbell\GitHub\GitHubFactory,
+            'github' instanceof \GrahamCampbell\GitHub\GitHubManager,
+            'github.connection' instanceof \Github\Client,
             'blade.compiler' instanceof \Illuminate\View\Compilers\BladeCompiler,
             'translation.loader' instanceof \Illuminate\Translation\FileLoader,
             'translator' instanceof \Illuminate\Translation\Translator,
@@ -272,6 +281,7 @@ namespace PHPSTORM_META {
             'command.ide-helper.meta' instanceof \Barryvdh\LaravelIdeHelper\Console\MetaCommand,
             'command.tail' instanceof \Spatie\Tail\TailCommand,
             'command.composer-security:check' instanceof \Padosoft\LaravelComposerSecurity\ComposerSecurityCheck,
+            'command.workbench:new' instanceof \Padosoft\Workbench\Workbench,
         ],
         \App::make('') => [
             '' == '@',
@@ -322,6 +332,10 @@ namespace PHPSTORM_META {
             'arcanedev.log-viewer.commands.stats' instanceof \Arcanedev\LogViewer\Commands\StatsCommand,
             'Arrilot\SystemCheck\ChecksCollection' instanceof \Arrilot\SystemCheck\ChecksCollection,
             'command.system.check' instanceof \Arrilot\SystemCheck\Console\SystemCheckCommand,
+            'github.authfactory' instanceof \GrahamCampbell\GitHub\Authenticators\AuthenticatorFactory,
+            'github.factory' instanceof \GrahamCampbell\GitHub\GitHubFactory,
+            'github' instanceof \GrahamCampbell\GitHub\GitHubManager,
+            'github.connection' instanceof \Github\Client,
             'blade.compiler' instanceof \Illuminate\View\Compilers\BladeCompiler,
             'translation.loader' instanceof \Illuminate\Translation\FileLoader,
             'translator' instanceof \Illuminate\Translation\Translator,
@@ -404,6 +418,7 @@ namespace PHPSTORM_META {
             'command.ide-helper.meta' instanceof \Barryvdh\LaravelIdeHelper\Console\MetaCommand,
             'command.tail' instanceof \Spatie\Tail\TailCommand,
             'command.composer-security:check' instanceof \Padosoft\LaravelComposerSecurity\ComposerSecurityCheck,
+            'command.workbench:new' instanceof \Padosoft\Workbench\Workbench,
         ],
         app('') => [
             '' == '@',
@@ -454,6 +469,10 @@ namespace PHPSTORM_META {
             'arcanedev.log-viewer.commands.stats' instanceof \Arcanedev\LogViewer\Commands\StatsCommand,
             'Arrilot\SystemCheck\ChecksCollection' instanceof \Arrilot\SystemCheck\ChecksCollection,
             'command.system.check' instanceof \Arrilot\SystemCheck\Console\SystemCheckCommand,
+            'github.authfactory' instanceof \GrahamCampbell\GitHub\Authenticators\AuthenticatorFactory,
+            'github.factory' instanceof \GrahamCampbell\GitHub\GitHubFactory,
+            'github' instanceof \GrahamCampbell\GitHub\GitHubManager,
+            'github.connection' instanceof \Github\Client,
             'blade.compiler' instanceof \Illuminate\View\Compilers\BladeCompiler,
             'translation.loader' instanceof \Illuminate\Translation\FileLoader,
             'translator' instanceof \Illuminate\Translation\Translator,
@@ -536,6 +555,7 @@ namespace PHPSTORM_META {
             'command.ide-helper.meta' instanceof \Barryvdh\LaravelIdeHelper\Console\MetaCommand,
             'command.tail' instanceof \Spatie\Tail\TailCommand,
             'command.composer-security:check' instanceof \Padosoft\LaravelComposerSecurity\ComposerSecurityCheck,
+            'command.workbench:new' instanceof \Padosoft\Workbench\Workbench,
         ],
     ];
 }

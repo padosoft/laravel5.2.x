@@ -12,7 +12,11 @@
         "arcanedev/log-viewer": "~3.0",
         "spatie/laravel-tail": "^1.1",
         "arrilot/laravel-systemcheck": "dev-master",
-        "mathiasgrimm/laravel-env-validator": "^1.1"
+        "mathiasgrimm/laravel-env-validator": "^1.1",
+        "graham-campbell/github": "^4.2",
+        "stevenmaguire/oauth2-bitbucket": "dev-master",
+        "jketelaar/bitbucket": "dev-master",
+        "phpseclib/phpseclib": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -25,7 +29,8 @@
         "filp/whoops": "^2.0",
         "scrutinizer/ocular": "~1.1",
         "phpmd/phpmd": "2.*",
-        "squizlabs/php_codesniffer": "2.*"
+        "squizlabs/php_codesniffer": "2.*",
+        "padosoft/laravel-test": "^1.1.0"
     },
     "autoload": {
         "classmap": [
@@ -36,7 +41,11 @@
             "App\\": "app/",
             "Padosoft\\LaravelComposerSecurity\\": "packages/padosoft/laravel-composer-security/src/",
             "Padosoft\\LaravelTest\\": "packages/padosoft/laravel-test/src/",
-            "Padosoft\\Test\\": "packages/padosoft/test/src/"
+            "Padosoft\\Test\\": "packages/padosoft/test/src/",
+            "Padosoft\\Workbench\\" : "packages/padosoft/workbench/src/",
+            "Padosoft\\HTTPClient\\" : "packages/padosoft/httpclient/src/",
+            "Padosoft\\Hooks\\" : "packages/padosoft/hooks/src/",
+            "Phpseclib\\" : "phpseclib/"
         }
     },
     "autoload-dev": {
@@ -44,7 +53,9 @@
             "tests/TestCase.php"
         ],
         "psr-4": {
-            "Padosoft\\LaravelComposerSecurity\\Test\\": "packages/padosoft/laravel-composer-security/tests/"
+            "Padosoft\\LaravelComposerSecurity\\Test\\": "packages/padosoft/laravel-composer-security/tests/",
+            "Padosoft\\Workbench\\Test\\" : "packages/padosoft/workbench/tests/",
+            "Padosoft\\HTTPClient\\Test\\" : "packages/padosoft/httpclient/tests/"
         }
     },
     "scripts": {
