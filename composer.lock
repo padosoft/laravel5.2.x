@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "49bf7a1357c488e7a3746cf67f4ac6ad",
-    "content-hash": "502f55710f2c264a0ba3205b50b34d25",
+    "hash": "5dab7fab1d2a27043a9dade24c640576",
+    "content-hash": "b0de425d44c42007f20c0401406f033d",
     "packages": [
         {
             "name": "arcanedev/log-viewer",
@@ -1825,6 +1825,61 @@
                 "php"
             ],
             "time": "2016-04-19 13:41:41"
+        },
+        {
+            "name": "padosoft/httpclient",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/padosoft/HTTPClient.git",
+                "reference": "3a2eff1fa120aa719a8e3acc203f423b0dcdd856"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/padosoft/HTTPClient/zipball/3a2eff1fa120aa719a8e3acc203f423b0dcdd856",
+                "reference": "3a2eff1fa120aa719a8e3acc203f423b0dcdd856",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.1",
+                "psr/log": "~1.0"
+            },
+            "require-dev": {
+                "padosoft/test": "~0.1",
+                "phpmd/phpmd": "2.*",
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Padosoft\\HTTPClient\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "padosoft",
+                    "email": "helpdesk@padosoft.com",
+                    "homepage": "https://www.padosoft.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "helper for http client guzzle",
+            "homepage": "https://github.org/Padosoft/HTTPClient/",
+            "keywords": [
+                "httplient"
+            ],
+            "time": "2016-05-05 10:23:24"
         },
         {
             "name": "paragonie/random_compat",
@@ -3884,16 +3939,16 @@
         },
         {
             "name": "padosoft/test",
-            "version": "0.1.1",
+            "version": "0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/padosoft/test.git",
-                "reference": "1c920bd40ca2cb8f29c1b99c5c70b9d88b432200"
+                "reference": "e154679d003da0082957e1cbefa86e88de7e918c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/padosoft/test/zipball/1c920bd40ca2cb8f29c1b99c5c70b9d88b432200",
-                "reference": "1c920bd40ca2cb8f29c1b99c5c70b9d88b432200",
+                "url": "https://api.github.com/repos/padosoft/test/zipball/e154679d003da0082957e1cbefa86e88de7e918c",
+                "reference": "e154679d003da0082957e1cbefa86e88de7e918c",
                 "shasum": ""
             },
             "require": {
@@ -3923,7 +3978,7 @@
             "keywords": [
                 "test"
             ],
-            "time": "2016-02-02 10:43:43"
+            "time": "2016-05-02 17:03:30"
         },
         {
             "name": "pdepend/pdepend",

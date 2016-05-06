@@ -16,7 +16,8 @@
         "graham-campbell/github": "^4.2",
         "stevenmaguire/oauth2-bitbucket": "dev-master",
         "jketelaar/bitbucket": "dev-master",
-        "phpseclib/phpseclib": "^2.0"
+        "phpseclib/phpseclib": "^2.0",
+        "padosoft/httpclient": "^0.0.2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
