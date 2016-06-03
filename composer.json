@@ -18,7 +18,8 @@
         "jketelaar/bitbucket": "dev-master",
         "phpseclib/phpseclib": "^2.0",
         "padosoft/httpclient": "^0.0.2",
-        "cpliakas/git-wrapper": "^1.7"
+        "cpliakas/git-wrapper": "^1.7",
+        "league/commonmark": "^0.13.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

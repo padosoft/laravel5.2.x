@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.2.31 on 2016-05-12.
+ * Generated for Laravel 5.2.32 on 2016-06-02.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -3776,6 +3776,7 @@ if (! function_exists('with')) {
          * Start a new database transaction.
          *
          * @return void 
+         * @throws Exception
          * @static 
          */
         public static function beginTransaction(){
@@ -4296,6 +4297,16 @@ if (! function_exists('with')) {
         }
         
         /**
+         * Get an array of global scopes that were removed from the query.
+         *
+         * @return array 
+         * @static 
+         */
+        public static function removedScopes(){
+            return \Illuminate\Database\Eloquent\Builder::removedScopes();
+        }
+        
+        /**
          * Find a model by its primary key.
          *
          * @param mixed $id
@@ -4506,11 +4517,12 @@ if (! function_exists('with')) {
          * @param int $perPage
          * @param array $columns
          * @param string $pageName
+         * @param int|null $page
          * @return \Illuminate\Contracts\Pagination\Paginator 
          * @static 
          */
-        public static function simplePaginate($perPage = null, $columns = array(), $pageName = 'page'){
-            return \Illuminate\Database\Eloquent\Builder::simplePaginate($perPage, $columns, $pageName);
+        public static function simplePaginate($perPage = null, $columns = array(), $pageName = 'page', $page = null){
+            return \Illuminate\Database\Eloquent\Builder::simplePaginate($perPage, $columns, $pageName, $page);
         }
         
         /**
@@ -4652,6 +4664,17 @@ if (! function_exists('with')) {
          */
         public static function orWhereHas($relation, $callback, $operator = '>=', $count = 1){
             return \Illuminate\Database\Eloquent\Builder::orWhereHas($relation, $callback, $operator, $count);
+        }
+        
+        /**
+         * Add subselect queries to count the relations.
+         *
+         * @param mixed $relations
+         * @return $this 
+         * @static 
+         */
+        public static function withCount($relations){
+            return \Illuminate\Database\Eloquent\Builder::withCount($relations);
         }
         
         /**
@@ -4939,6 +4962,33 @@ if (! function_exists('with')) {
          */
         public static function when($value, $callback){
             return \Illuminate\Database\Query\Builder::when($value, $callback);
+        }
+        
+        /**
+         * Add a "where" clause comparing two columns to the query.
+         *
+         * @param string|array $first
+         * @param string|null $operator
+         * @param string|null $second
+         * @param string|null $boolean
+         * @return \Illuminate\Database\Query\Builder|static 
+         * @static 
+         */
+        public static function whereColumn($first, $operator = null, $second = null, $boolean = 'and'){
+            return \Illuminate\Database\Query\Builder::whereColumn($first, $operator, $second, $boolean);
+        }
+        
+        /**
+         * Add an "or where" clause comparing two columns to the query.
+         *
+         * @param string|array $first
+         * @param string|null $operator
+         * @param string|null $second
+         * @return \Illuminate\Database\Query\Builder|static 
+         * @static 
+         */
+        public static function orWhereColumn($first, $operator = null, $second = null){
+            return \Illuminate\Database\Query\Builder::orWhereColumn($first, $operator, $second);
         }
         
         /**
@@ -6269,11 +6319,12 @@ if (! function_exists('with')) {
          * Get all of the files from the given directory (recursive).
          *
          * @param string $directory
+         * @param bool $hidden
          * @return array 
          * @static 
          */
-        public static function allFiles($directory){
-            return \Illuminate\Filesystem\Filesystem::allFiles($directory);
+        public static function allFiles($directory, $hidden = false){
+            return \Illuminate\Filesystem\Filesystem::allFiles($directory, $hidden);
         }
         
         /**
@@ -8627,7 +8678,7 @@ if (! function_exists('with')) {
          * Order of precedence: PATH (routing placeholders or custom attributes), GET, BODY
          *
          * @param string $key the key
-         * @param mixed $default the default value
+         * @param mixed $default the default value if the parameter key does not exist
          * @return mixed 
          * @static 
          */
@@ -9079,7 +9130,7 @@ if (! function_exists('with')) {
          * Here is the process to determine the format:
          * 
          *  * format defined by the user (with setRequestFormat())
-         *  * _format request parameter
+         *  * _format request attribute
          *  * $default
          *
          * @param string $default The default format
@@ -10229,6 +10280,26 @@ if (! function_exists('with')) {
          */
         public static function rename($from, $to){
             return \Illuminate\Database\Schema\Builder::rename($from, $to);
+        }
+        
+        /**
+         * Enable foreign key constraints.
+         *
+         * @return bool 
+         * @static 
+         */
+        public static function enableForeignKeyConstraints(){
+            return \Illuminate\Database\Schema\Builder::enableForeignKeyConstraints();
+        }
+        
+        /**
+         * Disable foreign key constraints.
+         *
+         * @return bool 
+         * @static 
+         */
+        public static function disableForeignKeyConstraints(){
+            return \Illuminate\Database\Schema\Builder::disableForeignKeyConstraints();
         }
         
         /**
