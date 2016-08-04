@@ -3,7 +3,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2016-07-09.
+    * Generated on 2016-08-04.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -144,7 +144,7 @@ namespace PHPSTORM_META {
             'command.ide-helper.meta' instanceof \Barryvdh\LaravelIdeHelper\Console\MetaCommand,
             'command.tail' instanceof \Spatie\Tail\TailCommand,
             'command.composer-security:check' instanceof \Padosoft\LaravelComposerSecurity\ComposerSecurityCheck,
-            'command.workbench:new' instanceof \Padosoft\Workbench\Workbench,
+            'command.workbench:version' instanceof \Padosoft\WorkbenchVersion\WorkbenchVersion,
         ],
         \Illuminate\Contracts\Container\Container::make('') => [
             '' == '@',
@@ -281,7 +281,7 @@ namespace PHPSTORM_META {
             'command.ide-helper.meta' instanceof \Barryvdh\LaravelIdeHelper\Console\MetaCommand,
             'command.tail' instanceof \Spatie\Tail\TailCommand,
             'command.composer-security:check' instanceof \Padosoft\LaravelComposerSecurity\ComposerSecurityCheck,
-            'command.workbench:new' instanceof \Padosoft\Workbench\Workbench,
+            'command.workbench:version' instanceof \Padosoft\WorkbenchVersion\WorkbenchVersion,
         ],
         \App::make('') => [
             '' == '@',
@@ -418,7 +418,7 @@ namespace PHPSTORM_META {
             'command.ide-helper.meta' instanceof \Barryvdh\LaravelIdeHelper\Console\MetaCommand,
             'command.tail' instanceof \Spatie\Tail\TailCommand,
             'command.composer-security:check' instanceof \Padosoft\LaravelComposerSecurity\ComposerSecurityCheck,
-            'command.workbench:new' instanceof \Padosoft\Workbench\Workbench,
+            'command.workbench:version' instanceof \Padosoft\WorkbenchVersion\WorkbenchVersion,
         ],
         app('') => [
             '' == '@',
@@ -555,7 +555,7 @@ namespace PHPSTORM_META {
             'command.ide-helper.meta' instanceof \Barryvdh\LaravelIdeHelper\Console\MetaCommand,
             'command.tail' instanceof \Spatie\Tail\TailCommand,
             'command.composer-security:check' instanceof \Padosoft\LaravelComposerSecurity\ComposerSecurityCheck,
-            'command.workbench:new' instanceof \Padosoft\Workbench\Workbench,
+            'command.workbench:version' instanceof \Padosoft\WorkbenchVersion\WorkbenchVersion,
         ],
     ];
 }
