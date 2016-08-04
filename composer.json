@@ -46,6 +46,7 @@
             "Padosoft\\LaravelTest\\": "packages/padosoft/laravel-test/src/",
             "Padosoft\\Test\\": "packages/padosoft/test/src/",
             "Padosoft\\Workbench\\" : "packages/padosoft/workbench/src/",
+            "Padosoft\\WorkbenchVersion\\" : "packages/padosoft/workbenchversion/src/",
             "Padosoft\\HTTPClient\\" : "packages/padosoft/httpclient/src/",
             "Padosoft\\Hooks\\" : "packages/padosoft/hooks/src/",
             "Padosoft\\Sluggable\\" : "packages/padosoft/laravel-sluggable/src/",
@@ -59,6 +60,7 @@
         "psr-4": {
             "Padosoft\\LaravelComposerSecurity\\Test\\": "packages/padosoft/laravel-composer-security/tests/",
             "Padosoft\\Workbench\\Test\\" : "packages/padosoft/workbench/tests/",
+            "Padosoft\\WorkbenchVersion\\Test\\" : "packages/padosoft/workbenchversion/tests/",
             "Padosoft\\HTTPClient\\Test\\" : "packages/padosoft/httpclient/tests/",
             "Padosoft\\Sluggable\\Test\\Integration\\" : "packages/padosoft/laravel-sluggable/tests/"
         }

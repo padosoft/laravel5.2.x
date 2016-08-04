@@ -171,6 +171,7 @@ return [
         Padosoft\LaravelComposerSecurity\ComposerSecurityCheckServiceProvider::class,
         Padosoft\Hooks\HooksServiceProvider::class,
         Padosoft\Workbench\WorkbenchServiceProvider::class,
+        Padosoft\WorkbenchVersion\WorkbenchVersionServiceProvider::class,
         Arrilot\SystemCheck\ServiceProvider::class,
         MathiasGrimm\LaravelEnvValidator\ServiceProvider::class,
         GrahamCampbell\GitHub\GitHubServiceProvider::class,

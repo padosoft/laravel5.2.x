@@ -41,6 +41,9 @@ return [
         'email' => env('WORKBENCH_GIT_EMAIL', ''),
 
     ],
+    'githookenable' => env( 'WORKBENCH_GITHOOKENABLE',''
+
+    ),
     'organization' => env('WORKBENCH_GIT_GITHUB_ORGANIZATION', 'padosoft'),
     'ssh' => [
         'server' => env('WORKBENCH_SSH_SERVER', '192.168.0.29'),
@@ -56,7 +59,7 @@ return [
     'substitute' => [
         'author' =>env('WORKBENCH_SUBSTITUTION_AUTHOR', 'Padosoft'),
         'emailauthor' =>env('WORKBENCH_SUBSTITUTION_EMAILAUTHOR', 'helpdesk@padosoft.com'),
-        'siteauthor' =>env('WORKBENCH_SUBSTITUTION_SITEAUTHOR', 'www.padosoft.com'),
+        'siteauthor' =>env('WORKBENCH_SUBSTITUTION_SITEAUTHOR', 'http://www.padosoft.com'),
         'vendor' =>env('WORKBENCH_SUBSTITUTION_VENDOR', 'Padosoft'),
         'files' =>env('WORKBENCH_SUBSTITUTION_FILES', 'readme.md,changelog.md,license.md,travis.yml,composer.json,tests/config/sedCommand.sh,tests/config/sedCommandProvider.sh'),
     ],
