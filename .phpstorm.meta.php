@@ -3,7 +3,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2016-08-04.
+    * Generated on 2016-08-08.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -62,6 +62,7 @@ namespace PHPSTORM_META {
             'github.factory' instanceof \GrahamCampbell\GitHub\GitHubFactory,
             'github' instanceof \GrahamCampbell\GitHub\GitHubManager,
             'github.connection' instanceof \Github\Client,
+            'MailThief\MailThief' instanceof \MailThief\MailThief,
             'blade.compiler' instanceof \Illuminate\View\Compilers\BladeCompiler,
             'translation.loader' instanceof \Illuminate\Translation\FileLoader,
             'translator' instanceof \Illuminate\Translation\Translator,
@@ -199,6 +200,7 @@ namespace PHPSTORM_META {
             'github.factory' instanceof \GrahamCampbell\GitHub\GitHubFactory,
             'github' instanceof \GrahamCampbell\GitHub\GitHubManager,
             'github.connection' instanceof \Github\Client,
+            'MailThief\MailThief' instanceof \MailThief\MailThief,
             'blade.compiler' instanceof \Illuminate\View\Compilers\BladeCompiler,
             'translation.loader' instanceof \Illuminate\Translation\FileLoader,
             'translator' instanceof \Illuminate\Translation\Translator,
@@ -336,6 +338,7 @@ namespace PHPSTORM_META {
             'github.factory' instanceof \GrahamCampbell\GitHub\GitHubFactory,
             'github' instanceof \GrahamCampbell\GitHub\GitHubManager,
             'github.connection' instanceof \Github\Client,
+            'MailThief\MailThief' instanceof \MailThief\MailThief,
             'blade.compiler' instanceof \Illuminate\View\Compilers\BladeCompiler,
             'translation.loader' instanceof \Illuminate\Translation\FileLoader,
             'translator' instanceof \Illuminate\Translation\Translator,
@@ -473,6 +476,7 @@ namespace PHPSTORM_META {
             'github.factory' instanceof \GrahamCampbell\GitHub\GitHubFactory,
             'github' instanceof \GrahamCampbell\GitHub\GitHubManager,
             'github.connection' instanceof \Github\Client,
+            'MailThief\MailThief' instanceof \MailThief\MailThief,
             'blade.compiler' instanceof \Illuminate\View\Compilers\BladeCompiler,
             'translation.loader' instanceof \Illuminate\Translation\FileLoader,
             'translator' instanceof \Illuminate\Translation\Translator,

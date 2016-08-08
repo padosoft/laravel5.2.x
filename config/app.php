@@ -175,6 +175,7 @@ return [
         Arrilot\SystemCheck\ServiceProvider::class,
         MathiasGrimm\LaravelEnvValidator\ServiceProvider::class,
         GrahamCampbell\GitHub\GitHubServiceProvider::class,
+        MailThief\MailThiefServiceProvider::class,
     ],
 
     /*
@@ -222,6 +223,7 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
         'Debugbar'  => Barryvdh\Debugbar\Facade::class,
         'GitHub'    => GrahamCampbell\GitHub\Facades\GitHub::class,
+        'MailThief' => MailThief\Facades\MailThief::class,
 
     ],
 
