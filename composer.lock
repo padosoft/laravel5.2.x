@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8ab2da201617a7d22438d0d7024ff3d7",
-    "content-hash": "d993832abe5fd70c9b0ba313c6e7f1cd",
+    "hash": "dbf18798b12ad826c22fdc31971104e1",
+    "content-hash": "561d89c8b6421828401494a38ff2521b",
     "packages": [
         {
             "name": "arcanedev/log-viewer",
@@ -2005,6 +2005,55 @@
                 "httplient"
             ],
             "time": "2016-05-05 10:23:24"
+        },
+        {
+            "name": "padosoft/io",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/padosoft/io.git",
+                "reference": "6de3679dbb0f11585866afdbc9e63961959b4c90"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/padosoft/io/zipball/6de3679dbb0f11585866afdbc9e63961959b4c90",
+                "reference": "6de3679dbb0f11585866afdbc9e63961959b4c90",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Padosoft\\Io\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lorenzo Padovani",
+                    "email": "helpdesk@padosoft.com",
+                    "homepage": "https://www.padosoft.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "simple agnostic package for IO releted (files, dir, etc..)",
+            "homepage": "https://github.com/padosoft/io",
+            "keywords": [
+                "directory",
+                "file",
+                "io",
+                "padosoft",
+                "path"
+            ],
+            "time": "2016-08-30 12:46:44"
         },
         {
             "name": "paragonie/random_compat",

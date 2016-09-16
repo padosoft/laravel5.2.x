@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.2.32 on 2016-08-08.
+ * Generated for Laravel 5.2.32 on 2016-08-30.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -12438,6 +12438,83 @@ if (! function_exists('with')) {
         public static function getConfig(){
             //Method inherited from \GrahamCampbell\Manager\AbstractManager            
             return \GrahamCampbell\GitHub\GitHubManager::getConfig();
+        }
+        
+    }
+
+
+    class MailThief extends \MailThief\Facades\MailThief{
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function hijack(){
+            return \MailThief\MailThief::hijack();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function raw($text, $callback){
+            return \MailThief\MailThief::raw($text, $callback);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function send($view, $data, $callback){
+            return \MailThief\MailThief::send($view, $data, $callback);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function failures(){
+            return \MailThief\MailThief::failures();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function queue($view, $data, $callback, $queue = null){
+            return \MailThief\MailThief::queue($view, $data, $callback, $queue);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function later($delay, $view, $data, $callback, $queue = null){
+            return \MailThief\MailThief::later($delay, $view, $data, $callback, $queue);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function hasMessageFor($email){
+            return \MailThief\MailThief::hasMessageFor($email);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function lastMessage(){
+            return \MailThief\MailThief::lastMessage();
         }
         
     }
