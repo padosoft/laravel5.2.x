@@ -175,6 +175,7 @@ return [
         MathiasGrimm\LaravelEnvValidator\ServiceProvider::class,
         GrahamCampbell\GitHub\GitHubServiceProvider::class,
         MailThief\MailThiefServiceProvider::class,
+        //Padosoft\Laravel\Google\StructuredDataTestingTool\GoogleStructuredDataTestTool::class,
     ],
 
     /*

@@ -34,7 +34,8 @@
         "scrutinizer/ocular": "~1.1",
         "phpmd/phpmd": "2.*",
         "squizlabs/php_codesniffer": "2.*",
-        "padosoft/laravel-test": "^1.1.0"
+        "padosoft/laravel-test": "^1.1.0",
+        "padosoft/test": "^0.2"
     },
     "autoload": {
         "classmap": [
